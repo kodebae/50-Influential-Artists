@@ -206,11 +206,15 @@ const artists = [{
 
 (1) Name of the first artist in the array 
 (2) Bio of the third artist in the array */
-console.log();
+/*function art (){
+  for (let i=0, i < artists.length, i++)
+}*/
 
-
+console.log(artists[0].name);
+console.log(artists[2].bio);
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-
+artists.slice(8, 9).name = "Vincent Van Gogh";
+console.log(artists.slice(8, 9).name = "Vincent Van Gogh");
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -222,7 +226,9 @@ console.log();
  * it will return `The artist at index 0 is Amedeo Modigliani`.
  */
 function getArtistByIndex(id, name) {
-    /* code here */
+    let artistInfo =
+        console.log
+    return
 }
 
 /**
@@ -239,15 +245,15 @@ function getArtistByIndex(id, name) {
 function removeArtist( /*code here*/ ) {
     /* code here */
 }
-
+simular to above
 /**
 
 
 /* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
 function get20s( /* Code here */ ) {
-
-    /* Code here */
+    for loop.push
+        /* Code here */
 
 }
 
