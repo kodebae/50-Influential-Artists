@@ -213,7 +213,7 @@ const artists = [{
 console.log(artists[0].name);
 console.log(artists[2].bio);
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-artists.slice(8, 9).name = "Vincent Van Gogh";
+
 console.log(artists.slice(8, 9).name = "Vincent Van Gogh");
 
 
@@ -226,11 +226,9 @@ console.log(artists.slice(8, 9).name = "Vincent Van Gogh");
  * it will return `The artist at index 0 is Amedeo Modigliani`.
  */
 function getArtistByIndex(id, name) {
-    let artistInfo =
-        console.log
-    return
+    getArtistByIndex();
+    console.log(artists.slice);
 }
-
 /**
 
 
