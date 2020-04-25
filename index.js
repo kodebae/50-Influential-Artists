@@ -208,12 +208,12 @@ const artists = [{
 (2) Bio of the third artist in the array */
 
 function art() {
-    for (let i = 0, i < artists.length, i++)
+    for (let i = 0; i < artists.length; i++)
+
+
+        console.log(artists[0].name);
+    console.log(artists[2].bio);
 }
-
-console.log(artists[0].name);
-console.log(artists[2].bio);
-
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 console.log(artists.slice(8, 9).name = "Vincent Van Gogh");
@@ -270,7 +270,7 @@ function get20s(artists) {
 
 function lotsOfArt(artist) {
     let painters = [];
-    for (let i = 0, artist.length > i; i++)
+    for (let i = 0; artist.length > i; i++)
         if (artist[i].paintings > 100)
             painters.push(artist[i].name);
     return painters;
@@ -298,7 +298,7 @@ function addArtist(artistInfo) {
 let newArtist = { id: 21, name: "Karmen", years: "1987 - 2020", genre: "Water Color Anime Artist", nationality: "USA NC", bio: "Aspiring Software Engineer" };
 let newArtist2 = { id: 22, name: "John", years: "1707 - 1801", genre: "Expessiononism", nationality: "Italian", bio: "Aspiring Painter" };
 
-let newArray = [newArtist, newArtists2];
+let newArray = [newArtist, newArtist2];
 addArtist(newArray);
 
 
