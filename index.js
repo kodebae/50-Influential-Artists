@@ -259,8 +259,6 @@ function get20s(artists) {
         if (artists[i].years >= 1800 && artists[i].years <= 1900)
             artistNames.push(artists[i]);
     }
-
-
     return artistNames;
 
 
