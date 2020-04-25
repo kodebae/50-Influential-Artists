@@ -204,14 +204,16 @@ const artists = [{
 
 /* Task 1: Practice accessing data above by console.log-ing following items:
 
-(1) Name of the first artist in the array 
+(1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
-/*function art (){
-  for (let i=0, i < artists.length, i++)
-}*/
+
+function art() {
+    for (let i = 0, i < artists.length, i++)
+}
 
 console.log(artists[0].name);
 console.log(artists[2].bio);
+
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 console.log(artists.slice(8, 9).name = "Vincent Van Gogh");
@@ -240,26 +242,39 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist( /*code here*/ ) {
-    /* code here */
+function removeArtist(artists, arrNum) {
+    let removed = artists.splice(index, 1);
 }
-simular to above
+
 /**
 
 
 /* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s( /* Code here */ ) {
-    for loop.push
-        /* Code here */
+function get20s(artists) {
+    let artistNames = [];
+    for (let i = 0; i < artist.length; i++) {
+        "1884 - 1920"
+        let year = parseInt(artists[i].years.split(" - ")[0]);
+        if (artists[i].years >= 1800 && artists[i].years <= 1900)
+            artistNames.push(artists[i]);
+    }
+    return artistNames;
+
 
 }
 
+
+
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt( /* Code here */ ) {
+function lotsOfArt(artist) {
+    let painters = [];
+    for (let i = 0, artist.length > i; i++)
+        if (artist[i].paintings > 100)
+            painters.push(artist[i].name);
+    return painters;
 
-    /* Code here */
 
 }
 
@@ -273,19 +288,29 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist( /* Code here */ ) {
-
-    /* Code here */
+function addArtist(artistInfo) {
+    artists.push(artistInfo[0]);
+    artists.push(artistInfo[1]);
 
 }
 
 
+let newArtist = { id: 21, name: "Karmen", years: "1987 - 2020", genre: "Water Color Anime Artist", nationality: "USA NC", bio: "Aspiring Software Engineer" };
+let newArtist2 = { id: 22, name: "John", years: "1707 - 1801", genre: "Expessiononism", nationality: "Italian", bio: "Aspiring Painter" };
+
+let newArray = [newArtist, newArtists2];
+addArtist(newArray);
+
+
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
-function checkArtist( /* Code here */ ) {
+function checkArtist(artistName) {
+    for (let i = 0; i < artists.length; i++) {
+        if (artists[i].name === artistName)
+            return true;
+    }
 
-    /* Code here */
-
+    return false;
 }
 
 
