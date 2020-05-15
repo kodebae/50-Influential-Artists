@@ -86,8 +86,30 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-body a {
+body {
+  height: 100%;
+}
+body h1 {
+  font-size: 3.5rem;
+}
+body button {
+  height: 40px;
+  width: 130px;
+  font-size: 15px;
+  border-radius: 5%;
+  box-shadow: 5px 4px 18px black;
+}
+body ul li a {
   text-decoration: none;
+}
+body p {
+  text-align: center;
+  font-size: 15px;
+  margin: 1rem;
+}
+header {
+  margin: 3rem;
+  overflow: hidden;
 }
 header nav ul {
   display: flex;
@@ -98,42 +120,94 @@ header nav ul {
 }
 header nav ul a {
   color: black;
-  justify-content: space-evenly;
   padding: 1rem;
-  border-right: solid 1px black;
+  justify-content: space-evenly;
+  border-right: solid 2px black;
+  font-size: 22px;
+  color: darkslategrey;
 }
-body section.artists-container {
+header nav ul .noline {
+  border: none;
+}
+@media (max-width: 500px) {
+  header {
+    margin: 4rem;
+  }
+}
+.hero-image {
+  background-image: url(/assets/home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  width: 60%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  margin-left: 15rem;
+  margin-bottom: 4rem;
+  opacity: 75%;
+}
+.hero-text {
+  font-size: 4rem;
   text-align: center;
-  font-size: 0.5rem;
+  position: absolute;
+  top: 25%;
+  color: white;
 }
-body section.artists-container .artist {
-  font-size: 0.9rem;
-  width: 200px;
-  height: 200px;
-}
-body section.artists-container .artist img {
+.hero-image {
+  background-image: url(/assets/home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  width: 60%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  margin-left: 15rem;
+  margin-bottom: 4rem;
+  opacity: 75%;
+}
+.hero-text {
+  font-size: 4rem;
   text-align: center;
-  font-size: 0.5rem;
-  width: 150px;
-  height: 150px;
-  margin: 30px;
+  position: absolute;
+  top: 25%;
+  color: white;
 }
-body section.artists-container .artist img:hover {
-  opacity: 80%;
-}
-body button {
+.artists-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem;
+  margin: 4rem;
+  font-size: 1.5rem;
+  border-top: solid 1px darkslategrey;
+}
+.artist {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  font-size: 0.9rem;
-  border-radius: 10%;
+  width: 95px;
+}
+.artist img.bioimg {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  height: 250px;
+}
+.artist a {
+  display: flex;
   color: black;
-  border-bottom: solid 1px black;
+  text-decoration: none;
+  font-size: 15px;
+}
+.bio {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
 }
