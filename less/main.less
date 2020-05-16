@@ -26,8 +26,9 @@
 
     .artists-container{
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
         padding: 4rem;
         margin: 4rem;
         font-size: 1.5rem;
@@ -36,33 +37,38 @@
 
     .artist {
         display: flex;
-        justify-content: center;
-        // align-content: center;
+        flex-direction: column;
         text-align: center;
-        // flex-wrap: nowrap;
-        width: 95px;
+        align-content: center;
+        width: 350px;
 
         img.bioimg {
             display: flex;
-            justify-content: space-between;
-            // flex-wrap: wrap;
-            width: 250px;
+            justify-content: space-around;
+            width: 350px;
             height: 250px;
+            border-radius: 2%;
         }//closes IMG tag
 
             a{
                 display: flex;
                 color: black;
+                text-align: center;
+                align-content: center;
                 text-decoration: none;
-                font-size: 15px;
+                font-size: 25px;
             } //closes anchor tag
+            .arttext {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+            }
         } // closes artist 
         .bio{
             display: flex;
             justify-content: center;
             align-content: center;
-            flex-direction: row;
-        
-
+            text-align: center;
         } // closes bio
 
