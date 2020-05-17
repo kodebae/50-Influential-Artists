@@ -1,31 +1,24 @@
 
 
-    .hero-image{
-       background-image: url(/assets/home.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        height: 500px;
-        width: 60%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-left: 15rem;
-        margin-bottom: 4rem;
-        opacity: 75%;
-        @media @screen {
-            image-width: 80%;
-            max-width: 80%;
-            margin: 0;
-            margin-left: 8rem;
-        }
-    } // closes hero img
+        .hero-image{
+            background-image: url(/assets/home.png);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 500px;
+            width: 60%;
+         @media @screen {
+            height: 350px;
+            width: 90%;
+            display: flex;
+            align-content:center;
+            justify-content: center;
+            }// closes MQ
+        } // closes hero img
+    // }
     .hero-text {
         font-size: 4rem;;
         text-align: center;
-        position: absolute;
-        top: 25%;
         color: white;
       } // closes hero-text
  
@@ -45,23 +38,32 @@
             display: flex;
             flex-direction: column;
             align-content: center;
-            justify-content: center;
             } // closes MQ
     } //closes section artist container
 
     .artist {
         display: flex;
         flex-direction: column;
-        text-align: center;
         align-content: center;
+        text-align: center;
         width: 350px;
-
+            @media @screen {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+            }
         img.bioimg {
             display: flex;
             justify-content: space-around;
             width: 350px;
             height: 250px;
             border-radius: 2%;
+            @media @screen {
+                align-content: center;
+                justify-content: center;
+                width:250px;
+                height: 150px;
+            } // Closes MQ
         }//closes IMG tag
 
             a{
@@ -69,21 +71,18 @@
                 color: darkslategrey;
                 text-align: center;
                 justify-content: center;
-                align-content: center;
                 text-decoration: none;
                 font-size: 25px;
             } //closes anchor tag
             .arttext {
                 display: flex;
                 justify-content: center;
-                align-content: center;
                 text-align: center;
             }
         } // closes artist 
         .bio{
             display: flex;
             justify-content: center;
-            align-content: center;
             text-align: center;
         } // closes bio
 
