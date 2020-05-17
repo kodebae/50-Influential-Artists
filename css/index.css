@@ -114,6 +114,12 @@ header {
   margin: 3rem;
   overflow: hidden;
 }
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+}
 header nav ul {
   display: flex;
   justify-content: center;
@@ -136,9 +142,10 @@ header nav ul button {
   color: black;
   background-color: white;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header {
     margin: 4rem;
+    justify-content: center;
   }
 }
 .hero-image {
@@ -155,6 +162,14 @@ header nav ul button {
   margin-left: 15rem;
   margin-bottom: 4rem;
   opacity: 75%;
+}
+@media (max-width: 600px) {
+  .hero-image {
+    image-width: 80%;
+    max-width: 80%;
+    margin: 0;
+    margin-left: 8rem;
+  }
 }
 .hero-text {
   font-size: 4rem;
@@ -173,6 +188,15 @@ header nav ul button {
   font-size: 1.5rem;
   border-top: solid 1px darkslategrey;
 }
+@media (max-width: 600px) {
+  .artists-container {
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+}
 .artist {
   display: flex;
   flex-direction: column;
@@ -189,8 +213,9 @@ header nav ul button {
 }
 .artist a {
   display: flex;
-  color: black;
+  color: darkslategrey;
   text-align: center;
+  justify-content: center;
   align-content: center;
   text-decoration: none;
   font-size: 25px;

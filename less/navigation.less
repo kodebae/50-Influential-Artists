@@ -2,6 +2,10 @@
     header {
         margin: 3rem;
         overflow: hidden;
+        @media @screen{
+            display: flex;
+            justify-content: center;
+        }
         nav ul {
         .flexing();
         list-style-type: none;
@@ -22,5 +26,6 @@
     } // closes nav ul
         @media @screen {
         margin: 4rem;
+        justify-content: center;
         } // closes MQ
 } // closes header

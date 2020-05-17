@@ -14,6 +14,12 @@
         margin-left: 15rem;
         margin-bottom: 4rem;
         opacity: 75%;
+        @media @screen {
+            image-width: 80%;
+            max-width: 80%;
+            margin: 0;
+            margin-left: 8rem;
+        }
     } // closes hero img
     .hero-text {
         font-size: 4rem;;
@@ -33,6 +39,14 @@
         margin: 4rem;
         font-size: 1.5rem;
         border-top: solid 1px darkslategrey;
+        //MQ Begins inside main container
+        @media @screen {
+            margin: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            } // closes MQ
     } //closes section artist container
 
     .artist {
@@ -52,8 +66,9 @@
 
             a{
                 display: flex;
-                color: black;
+                color: darkslategrey;
                 text-align: center;
+                justify-content: center;
                 align-content: center;
                 text-decoration: none;
                 font-size: 25px;
